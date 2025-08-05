@@ -115,8 +115,5 @@ Product-API/
 
   <h2>👨‍💻 Author</h2>
   <p><strong>Syed Muhammad Danish</strong> – <a href="https://github.com/Danish12387">GitHub Profile</a></p>
-
-  <h2>📜 License</h2>
-  <p>This project is for demonstration and educational purposes.</p>
 </body>
 </html>
