@@ -21,10 +21,10 @@ app.get('/', (_, res) => {
   res.send('Welcome to the Product API!');
 });
 
-app.listen(PORT, async () => {
-  console.log(`Product API is running on http://localhost:${PORT}`);
+// app.listen(PORT, async () => {
+//   console.log(`Product API is running on http://localhost:${PORT}`);
 
-  await connectToDatabase();
-});
+// });
+connectToDatabase();
 
 export default app;
