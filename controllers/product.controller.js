@@ -5,7 +5,12 @@ export const getProductById = async (req, res, next) => {
     const { id } = req.params;
 
     try {
-        const productRes = await axios.get(`https://fakestoreapi.com/products/${id}`);
+        const productRes = await axios.get(`https://fakestoreapi.com/products/${id}`, {
+            headers: {
+                'User-Agent':
+                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+            },
+        });
         const product = productRes.data;
 
         if (!product) return res.status(404).json({ error: "Product not found" });
