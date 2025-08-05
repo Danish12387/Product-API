@@ -7,9 +7,9 @@ export const getProductById = async (req, res, next) => {
     try {
         const productRes = await axios.get(`https://fakestoreapi.com/products/${id}`, {
             headers: {
-                'User-Agent':
-                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
-            },
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36',
+                'Accept-Encoding': 'identity' // Disable Brotli/gzip
+            }
         });
         const product = productRes.data;
 
