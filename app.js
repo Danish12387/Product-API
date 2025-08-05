@@ -24,11 +24,13 @@ app.get('/', (_, res) => {
     <hr/>
     <h3>📖 Available Endpoints:</h3>
     <ul>
-      <li><strong>GET</strong> <code>/api/v1/products/:id</code> - Get product by ID</li>
-      <li><strong>PUT</strong> <code>/api/v1/products/:id</code> - Update product by ID</li>
+      <li><strong>GET</strong> <code>/api/v1/products/:id</code> – Get product by ID</li>
+      <li><strong>PUT</strong> <code>/api/v1/products/:id</code> – Update product by ID</li>
     </ul>
+    <p><strong>ℹ️ Note:</strong> Valid product <code>:id</code> values range from <strong>11 to 20</strong>.</p>
     <hr/>
-    <p>✅ Make sure to send appropriate headers and JSON data when updating products.</p>
+    <p>✅ Be sure to send appropriate headers and a valid JSON body when using the PUT endpoint.</p>
+    <p>📄 For full documentation and setup guide, visit the <a href="https://github.com/Danish12387/Product-API/blob/main/README.md" target="_blank">README on GitHub</a>.</p>
   `);
 });
 
